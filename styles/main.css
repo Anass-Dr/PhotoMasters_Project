@@ -205,37 +205,49 @@ footer {
     border-radius: 8px;
 }
 
-#blog {
+.blog {
     padding: 0;
 }
-#blog .head {
+#blog1 .head {
+    background-image: var(--img1);
+}
+#blog2 .head {
+    background-image: var(--img2);
+}
+#blog3 .head {
+    background-image: var(--img3);
+}
+#blog4 .head {
+    background-image: var(--img4);
+}
+.blog .head {
     color: #fff;
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: grid;
     place-items: center;
-    background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60') center no-repeat;
+    background: center no-repeat;
     background-size: cover;
     position: relative;
 }
-#blog .head::before {
+.blog .head::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, .5);
 }
-#blog h1 {
+.blog h1 {
     line-height: 1.5;
     text-align: center;
     position: relative;
     font-size: 70px;
 }
-#blog article {
+.blog article {
     max-width: 800px;
     margin: auto;
     padding: 40px 0 80px;
 }
-#blog article p {
+.blog article p {
     font-size: 14px;
     color: rgba(0, 0, 0, .6);
     line-height: 1.5;
